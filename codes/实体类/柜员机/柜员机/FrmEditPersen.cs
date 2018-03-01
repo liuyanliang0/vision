@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //引用空间
 
-using 柜员机;
-using static 柜员机.Persen;
+using Vision;
+using static Vision.Persen;
 
 namespace 柜员机
 {
