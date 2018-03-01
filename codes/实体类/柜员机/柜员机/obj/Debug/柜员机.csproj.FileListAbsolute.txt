@@ -8,3 +8,15 @@ D:\c#\柜员机\柜员机\obj\Debug\柜员机.csproj.GenerateResource.Cache
 D:\c#\柜员机\柜员机\obj\Debug\柜员机.csproj.CoreCompileInputs.cache
 D:\c#\柜员机\柜员机\obj\Debug\柜员机.exe
 D:\c#\柜员机\柜员机\obj\Debug\柜员机.pdb
+D:\c#\柜员机\柜员机\obj\Debug\柜员机.FrmEditPersen.resources
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\bin\Debug\柜员机.exe.config
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\bin\Debug\柜员机.exe
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\bin\Debug\柜员机.pdb
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.csprojResolveAssemblyReference.cache
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.Form1.resources
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.FrmEditPersen.resources
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.Properties.Resources.resources
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.csproj.GenerateResource.Cache
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.csproj.CoreCompileInputs.cache
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.exe
+D:\wuzhichao\vision\codes\实体类\柜员机\柜员机\obj\Debug\柜员机.pdb

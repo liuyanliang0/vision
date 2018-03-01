@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace 柜员机
 {
-    class Persen
+   public class Persen
     {
         
         //姓名
@@ -23,7 +23,7 @@ namespace 柜员机
             get { return age; }
             set
             {
-                if (value < 1 || value > 100)
+                if (value < 1 || value > 110)
                 {
                     throw (new ArgumentOutOfRangeException("AgeIntProperty", value, "年龄必须在0和100之间"));
                 }
@@ -31,12 +31,28 @@ namespace 柜员机
             }
         }
         //性别
-        public string Gender { get; set; }
+        //定义一个叫Gender的枚举类型
+       public enum Gender
+        {
+            男, 女
+        }
+        public Gender Sex{ get; set; }
 
         //居住地
         public string Address { get; set; }
 
         //学历
+        //public enum Education
+        //{
+        //    小学,
+        //    初中,
+        //    高中,
+        //    大学,
+        //    研究生,
+        //    博士,
+        //    博士前,
+
+        
         public string Education { get; set; }
 
         //初到教会时间
