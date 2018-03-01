@@ -45,6 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtLeaderPhone = new System.Windows.Forms.TextBox();
+            this.f_l = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEducation
@@ -185,11 +187,29 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // txtLeaderPhone
+            // 
+            this.txtLeaderPhone.Location = new System.Drawing.Point(670, 142);
+            this.txtLeaderPhone.Name = "txtLeaderPhone";
+            this.txtLeaderPhone.Size = new System.Drawing.Size(128, 25);
+            this.txtLeaderPhone.TabIndex = 40;
+            // 
+            // f_l
+            // 
+            this.f_l.AutoSize = true;
+            this.f_l.Location = new System.Drawing.Point(560, 145);
+            this.f_l.Name = "f_l";
+            this.f_l.Size = new System.Drawing.Size(97, 15);
+            this.f_l.TabIndex = 39;
+            this.f_l.Text = "代领人电话：";
+            // 
             // FrmEditPersen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 261);
+            this.Controls.Add(this.txtLeaderPhone);
+            this.Controls.Add(this.f_l);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtEducation);
             this.Controls.Add(this.txtTime);
@@ -234,5 +254,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.TextBox txtLeaderPhone;
+        private System.Windows.Forms.Label f_l;
     }
 }

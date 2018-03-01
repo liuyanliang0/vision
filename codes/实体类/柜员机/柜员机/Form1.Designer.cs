@@ -54,6 +54,8 @@
             this.btnDel = new System.Windows.Forms.Button();
             this.btnQuery = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.f_l = new System.Windows.Forms.Label();
+            this.txtLeaderPhone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersenList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -281,11 +283,29 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // f_l
+            // 
+            this.f_l.AutoSize = true;
+            this.f_l.Location = new System.Drawing.Point(610, 132);
+            this.f_l.Name = "f_l";
+            this.f_l.Size = new System.Drawing.Size(97, 15);
+            this.f_l.TabIndex = 25;
+            this.f_l.Text = "代领人电话：";
+            // 
+            // txtLeaderPhone
+            // 
+            this.txtLeaderPhone.Location = new System.Drawing.Point(720, 129);
+            this.txtLeaderPhone.Name = "txtLeaderPhone";
+            this.txtLeaderPhone.Size = new System.Drawing.Size(128, 25);
+            this.txtLeaderPhone.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 554);
+            this.Controls.Add(this.txtLeaderPhone);
+            this.Controls.Add(this.f_l);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnQuery);
             this.Controls.Add(this.btnDel);
@@ -345,6 +365,8 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnQuery;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label f_l;
+        private System.Windows.Forms.TextBox txtLeaderPhone;
     }
 }
 

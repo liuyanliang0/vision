@@ -25,14 +25,15 @@ namespace 柜员机
         {
             InitializeComponent();
             //显示要修改的人员信息
-            this.txtName.Text = objPersen.Name;
-            this.txtAge.Text = (objPersen.Age).ToString();
-            this.txtAddress.Text = objPersen.Address;
-            this.txtGender.Text = objPersen.Sex.ToString();
-            this.txtEducation.Text = objPersen.Education;
-            this.txtTelephone.Text = objPersen.Telephone;
-            this.txtTime.Text = objPersen.Time.ToShortDateString();
-            this.txtLeader.Text = objPersen.Leader;
+            this.txtName.Text = objPersen.F_Name;
+            this.txtAge.Text = (objPersen.F_Age).ToString();
+            this.txtAddress.Text = objPersen.F_Address;
+            this.txtGender.Text = objPersen.F_Sex.ToString();
+            this.txtEducation.Text = objPersen.F_Education;
+            this.txtTelephone.Text = objPersen.F_Phone;
+            this.txtTime.Text = objPersen.F_Date.ToShortDateString();
+            this.txtLeader.Text = objPersen.F_Leader;
+            this.txtLeaderPhone.Text = objPersen.F_LeaderPhone;
 
         }
 
@@ -43,14 +44,14 @@ namespace 柜员机
             //封装要修改的对象
             Persen objPersen = new Persen()
             {
-                Name = this.txtName.Text.Trim(),
-                Age = Convert.ToInt32(this.txtAge.Text.Trim()),
-                Sex = (Gender)(Enum.Parse(typeof(Gender), this.txtGender.Text.Trim())),
-                Address = this.txtAddress.Text.Trim(),
-                Education = this.txtEducation.Text.Trim(),
-                Time = Convert.ToDateTime(this.txtTime.Text.Trim()),
-                Telephone = this.txtTelephone.Text.Trim(),
-                Leader = this.txtLeader.Text.Trim(),
+                F_Name = this.txtName.Text.Trim(),
+                F_Age = Convert.ToInt32(this.txtAge.Text.Trim()),
+                F_Sex = (Gender)(Enum.Parse(typeof(Gender), this.txtGender.Text.Trim())),
+                F_Address = this.txtAddress.Text.Trim(),
+                F_Education = this.txtEducation.Text.Trim(),
+                F_Date = Convert.ToDateTime(this.txtTime.Text.Trim()),
+                F_Phone = this.txtTelephone.Text.Trim(),
+                F_Leader = this.txtLeader.Text.Trim(),
             };
             //从数据库或数据源中修改对象。。
 
