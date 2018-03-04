@@ -44,10 +44,6 @@
             this.txtLeader = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvPersenList = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Education = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTime = new System.Windows.Forms.DateTimePicker();
             this.bntEdit = new System.Windows.Forms.Button();
             this.txtEducation = new System.Windows.Forms.TextBox();
@@ -56,6 +52,11 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.f_l = new System.Windows.Forms.Label();
             this.txtLeaderPhone = new System.Windows.Forms.TextBox();
+            this.btnGroup = new System.Windows.Forms.Button();
+            this.F_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Education = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersenList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,7 +191,7 @@
             this.dgvPersenList.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvPersenList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPersenList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name,
+            this.F_Name,
             this.sex,
             this.Education,
             this.age});
@@ -200,34 +201,6 @@
             this.dgvPersenList.RowTemplate.Height = 27;
             this.dgvPersenList.Size = new System.Drawing.Size(808, 265);
             this.dgvPersenList.TabIndex = 17;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "姓名";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // sex
-            // 
-            this.sex.DataPropertyName = "sex";
-            this.sex.HeaderText = "性别";
-            this.sex.Name = "sex";
-            this.sex.ReadOnly = true;
-            // 
-            // Education
-            // 
-            this.Education.DataPropertyName = "Education";
-            this.Education.HeaderText = "学历";
-            this.Education.Name = "Education";
-            this.Education.ReadOnly = true;
-            // 
-            // age
-            // 
-            this.age.DataPropertyName = "age";
-            this.age.HeaderText = "年龄";
-            this.age.Name = "age";
-            this.age.ReadOnly = true;
             // 
             // txtTime
             // 
@@ -275,7 +248,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(740, 184);
+            this.btnClear.Location = new System.Drawing.Point(752, 184);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(84, 40);
             this.btnClear.TabIndex = 24;
@@ -299,11 +272,50 @@
             this.txtLeaderPhone.Size = new System.Drawing.Size(128, 25);
             this.txtLeaderPhone.TabIndex = 26;
             // 
+            // btnGroup
+            // 
+            this.btnGroup.Location = new System.Drawing.Point(632, 184);
+            this.btnGroup.Name = "btnGroup";
+            this.btnGroup.Size = new System.Drawing.Size(99, 40);
+            this.btnGroup.TabIndex = 27;
+            this.btnGroup.Text = "小组信息";
+            this.btnGroup.UseVisualStyleBackColor = true;
+            this.btnGroup.Click += new System.EventHandler(this.btnGroup_Click);
+            // 
+            // F_Name
+            // 
+            this.F_Name.DataPropertyName = "F_Name";
+            this.F_Name.HeaderText = "姓名";
+            this.F_Name.Name = "F_Name";
+            this.F_Name.ReadOnly = true;
+            // 
+            // sex
+            // 
+            this.sex.DataPropertyName = "sex";
+            this.sex.HeaderText = "性别";
+            this.sex.Name = "sex";
+            this.sex.ReadOnly = true;
+            // 
+            // Education
+            // 
+            this.Education.DataPropertyName = "Education";
+            this.Education.HeaderText = "学历";
+            this.Education.Name = "Education";
+            this.Education.ReadOnly = true;
+            // 
+            // age
+            // 
+            this.age.DataPropertyName = "age";
+            this.age.HeaderText = "年龄";
+            this.age.Name = "age";
+            this.age.ReadOnly = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 554);
+            this.Controls.Add(this.btnGroup);
             this.Controls.Add(this.txtLeaderPhone);
             this.Controls.Add(this.f_l);
             this.Controls.Add(this.btnClear);
@@ -358,15 +370,16 @@
         private System.Windows.Forms.DateTimePicker txtTime;
         private System.Windows.Forms.Button bntEdit;
         private System.Windows.Forms.TextBox txtEducation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Education;
-        private System.Windows.Forms.DataGridViewTextBoxColumn age;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnQuery;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label f_l;
         private System.Windows.Forms.TextBox txtLeaderPhone;
+        private System.Windows.Forms.Button btnGroup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn F_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Education;
+        private System.Windows.Forms.DataGridViewTextBoxColumn age;
     }
 }
 

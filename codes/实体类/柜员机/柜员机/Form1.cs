@@ -76,7 +76,7 @@ namespace 柜员机
             if (this.dgvPersenList.CurrentRow == null || this.dgvPersenList.RowCount == 0) return;
 
             //获取要修改的信息
-            string name = this.dgvPersenList.CurrentRow.Cells["name"].Value.ToString();
+            string name = this.dgvPersenList.CurrentRow.Cells["F_Name"].Value.ToString();
             Persen objPersen = (from b in this.persenList where b.F_Name.ToString().Equals(name) select b).First<Persen>();
             //显示要修改的窗体（把人员信息显示在修改窗体上）
             FrmEditPersen objEdit = new FrmEditPersen(objPersen);
@@ -135,6 +135,17 @@ namespace 柜员机
         {
             this.persenList.Clear();
             this.dgvPersenList.DataSource = null;
+        }
+        //显示小组窗体
+        private void btnGroup_Click(object sender, EventArgs e)
+        {
+           
+           
+            T_GroupForm form = new T_GroupForm();
+            form.ShowDialog();
+            //释放资源
+            form.Dispose();
+            form = null;
         }
     }
 }
